@@ -110,10 +110,10 @@
         Tune {
             label = "Tune";
             bindings = <
-&bt BT_CLR   &none  &none  &none  &bt BT_SEL 0  &kp C_VOLUME_UP  &snip       &none     &none       &none
-&bootloader  &none  &none  &none  &bt BT_SEL 1  &kp K_MUTE       &kp K_PREV  &kp K_PP  &kp K_NEXT  &bootloader
-&none        &none  &none  &none  &bt BT_SEL 2  &kp C_VOL_DN     &none       &none     &none       &none
-                    &none  &none  &none         &none            &none       &none
+&bt BT_CLR   &none  &none  &studio_unlock  &bt BT_SEL 0  &kp C_VOLUME_UP  &snip       &none     &none       &none
+&bootloader  &none  &none  &none           &bt BT_SEL 1  &kp K_MUTE       &kp K_PREV  &kp K_PP  &kp K_NEXT  &bootloader
+&none        &none  &none  &none           &bt BT_SEL 2  &kp C_VOL_DN     &none       &none     &none       &none
+                    &none  &none           &none         &none            &none       &none
             >;
         };
     };
