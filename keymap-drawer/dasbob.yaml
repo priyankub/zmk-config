@@ -68,10 +68,10 @@ layers:
   - '3'
   - {t: ▽, type: trans}
   - {type: held}
-  - ENTER
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - TAB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ENTER
   - {t: ▽, type: trans}
   Nav:
   - '!'
