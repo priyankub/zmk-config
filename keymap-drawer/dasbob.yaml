@@ -32,8 +32,8 @@ layers:
   - /
   - {t: ESC, h: Sym}
   - {t: SPACE, h: Sym}
-  - {t: ENTER, h: Sym}
-  - {t: TAB, h: Nav}
+  - {t: TAB, h: Sym}
+  - {t: ENTER, h: Nav}
   - {t: SPACE, h: Nav}
   - {t: BACKSPACE, h: Nav}
   Sym:
