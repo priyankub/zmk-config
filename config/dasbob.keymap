@@ -103,7 +103,7 @@
 &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET       &kp AMPS        &kp STAR      &kp DEL          &trans
 &trans    &trans  &trans    &trans      &trans       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
 &trans    &trans  &trans    &trans      &trans       &trans          &trans          &trans        &trans           &trans
-                  &trans    &kp ENTER   &trans       &trans          &kp TAB         &trans
+                  &trans    &kp TAB     &trans       &trans          &kp ENTER       &trans
             >;
         };
 
