@@ -32,8 +32,8 @@ layers:
   - /
   - {t: ESC, h: Sym}
   - {t: SPACE, h: Sym}
-  - ''
-  - ''
+  - {t: ENTER, h: Sym}
+  - {t: TAB, h: Nav}
   - {t: SPACE, h: Nav}
   - {t: BACKSPACE, h: Nav}
   Sym:
@@ -107,14 +107,14 @@ layers:
   - {t: ▽, type: trans}
   - ENTER
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: TAB, type: held}
+  - {type: held}
+  - TAB
   - {t: ▽, type: trans}
   Tune:
   - BT CLR
   - ''
   - ''
-  - STUDIO UNLOCK
+  - '&studio_unlock'
   - {t: BT, h: '0'}
   - VOLUME UP
   - '&snip'
@@ -144,8 +144,8 @@ layers:
   - {type: held}
   - ''
   - ''
-  - ''
   - {type: held}
+  - ''
   - ''
 combos:
 - p: [13, 16]
