@@ -7,15 +7,18 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "dasbob-layout.dtsi"
 
+&dasbob_layout {
+    transform = <&matrix_transform0>;
+};
 
 / {
 
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &default_layout;
+        zmk,physical-layout = &dasbob_layout;
     };
 
-	default_layout: keymap_transform_0 {
+	matrix_transform0: matrix_transform0 {
 		compatible = "zmk,matrix-transform";
 		columns = <36>;
 		rows = <1>;
