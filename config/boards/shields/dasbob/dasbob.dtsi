@@ -8,7 +8,7 @@
 #include "dasbob-layout.dtsi"
 
 &dasbob_layout {
-    transform = <&matrix_transform0>;
+    transform = <&default_transform>;
 };
 
 / {
@@ -18,7 +18,7 @@
         zmk,physical-layout = &dasbob_layout;
     };
 
-	matrix_transform0: matrix_transform0 {
+	default_transform: matrix_transform0 {
 		compatible = "zmk,matrix-transform";
 		columns = <36>;
 		rows = <1>;
