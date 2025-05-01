@@ -11,12 +11,11 @@
 / {
 
     chosen {
-		zephyr,display = &oled;
         zmk,kscan = &kscan0;
         zmk,physical-layout = &default_layout;
     };
 
-	default_layout: keymap_transform_0 {
+	default_layout: default_transform {
 		compatible = "zmk,matrix-transform";
 		columns = <36>;
 		rows = <1>;
@@ -55,24 +54,4 @@
 			<&pro_micro  8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 		;
 	};
-	
-&pro_micro_i2c {
-    status = "okay";
-
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;
-        width = <128>;
-        height = <32>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <31>;
-        segment-remap;
-        com-invdir;
-        com-sequential;
-        inversion-on;
-        prechargep = <0x22>;
-    };
-
-};
+};	
