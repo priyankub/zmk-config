@@ -5,13 +5,23 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <dasbob-layout.dtsi>
+
+&layouts_dasbob_position_map {
+    transform = <&default_transform>;
+};
+
+
+
+
 
 / {
-
-	chosen {
-		zmk,kscan = &kscan0;
-		zmk,matrix_transform = &default_transform;
-	};
+	
+    chosen {
+        zephyr,display = &oled;
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &layouts_dasbob_position_map;
+    };
 
 	default_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
