@@ -7,20 +7,13 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dasbob-layout.dtsi>
 
-&layouts_dasbob_position_map {
-    transform = <&default_transform>;
-};
-
-
-
-
 
 / {
-	
+
     chosen {
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &layouts_dasbob_position_map;
+        zmk,physical-layout = &default_layout;
     };
 
 	default_transform: keymap_transform_0 {

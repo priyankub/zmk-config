@@ -1,9 +1,11 @@
 #include <physical_layouts.dtsi>
+#include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-    layouts_dasbob_position_map: layouts_dasbob_position_map {
+    default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
+
 
         kscan = <&kscan0>;
         transform = <&matrix_transform0>;
@@ -45,23 +47,16 @@
             , <&key_physical_attrs 100 100  770  355 (-1500)   770   455>
             ;
     };
-};
-
-/ {
-    layouts_dasbob_position_map: layouts_dasbob_position_map {
+    position_map {
         compatible = "zmk,physical-layout-position-map";
 
-        complete;
-    };
-};
-
-&layouts_dasbob_position_map {
-    dasbob_posmap: five {
-        physical-layout = <&dasbob_layout>;
-        positions
+        default_layout {
+            physical-layout = <&default_layout>;
+            positions
             = < 0  1  2  3  4  5  6  7  8  9>
             , <10 11 12 13 14 15 16 17 18 19>
             , <20 21 22 23 24 25 26 27 28 29>
             , <      30 31 32 33 34 35      >;
+        };
     };
 };
