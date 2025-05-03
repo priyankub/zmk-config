@@ -16,6 +16,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &dasbob_layout;
+	zephyr,display = &oled;
     };
 
 	default_transform: matrix_transform0 {
