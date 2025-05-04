@@ -114,8 +114,8 @@ layers:
   - BT CLR
   - ''
   - ''
-  - '&studio_unlock'
-  - {t: BT, h: '0'}
+  - EP TOG
+  - ''
   - VOLUME UP
   - '&snip'
   - ''
@@ -125,17 +125,17 @@ layers:
   - ''
   - ''
   - ''
-  - {t: BT, h: '1'}
+  - ''
   - MUTE
   - PREV
   - PP
   - NEXT
   - '&bootloader'
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
   - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - VOL DN
   - ''
   - ''
