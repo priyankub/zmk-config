@@ -16,10 +16,10 @@ layers:
   - {t: F, h: LCTRL}
   - G
   - H
-  - {t: J, h: LCTRL}
+  - {t: J, h: RCTRL}
   - {t: K, h: RGUI}
   - {t: L, h: RIGHT ALT}
-  - {t: '''', h: RSHFT}
+  - {t: ;, h: RSHFT}
   - Z
   - X
   - C
@@ -30,19 +30,19 @@ layers:
   - ','
   - .
   - /
-  - {t: ESC, h: Sym}
+  - LCTRL
   - {t: SPACE, h: Sym}
-  - {t: TAB, h: Sym}
-  - {t: ENTER, h: Nav}
-  - {t: SPACE, h: Nav}
-  - {t: BACKSPACE, h: Nav}
+  - LGUI
+  - {t: TAB, h: Nav}
+  - SPACE
+  - BACKSPACE
   Sym:
   - '!'
   - '@'
   - '#'
-  - ;
-  - '{'
-  - '='
+  - $
+  - '%'
+  - ^
   - '7'
   - '8'
   - '9'
@@ -50,28 +50,28 @@ layers:
   - LSHFT
   - '`'
   - {t: ▽, type: trans}
-  - ':'
   - '['
-  - '-'
+  - ']'
+  - \
   - '4'
   - '5'
   - '6'
+  - '-'
   - {t: ▽, type: trans}
-  - '}'
-  - ']'
-  - )
-  - '~'
-  - (
-  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - ''''
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - '='
+  - ESC
   - {type: held}
   - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
   - {t: ▽, type: trans}
   Nav:
   - '!'
@@ -104,9 +104,9 @@ layers:
   - DOWN ARROW
   - RIGHT ARROW
   - {t: ▽, type: trans}
+  - ESC
   - {t: ▽, type: trans}
   - TAB
-  - {t: ▽, type: trans}
   - {type: held}
   - ENTER
   - {t: ▽, type: trans}
@@ -141,8 +141,8 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   - ''
   - {type: held}
   - ''
