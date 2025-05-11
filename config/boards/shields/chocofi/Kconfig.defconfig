@@ -4,19 +4,17 @@
 if SHIELD_CHOCOFI_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "chocofi"
+    default "Chocofi"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-	default y
+    default y
 
 endif
 
 if SHIELD_CHOCOFI_LEFT || SHIELD_CHOCOFI_RIGHT
 
 config ZMK_SPLIT
-	default y
-
-endif
+    default y
 
 if ZMK_DISPLAY
 
@@ -44,3 +42,5 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+
+endif
