@@ -12,12 +12,12 @@ layers:
   - P
   - {t: A, h: LSHFT}
   - {t: S, h: LALT}
-  - {t: D, h: LGUI}
-  - {t: F, h: LCTRL}
+  - D
+  - F
   - G
   - H
-  - {t: J, h: RCTRL}
-  - {t: K, h: RGUI}
+  - J
+  - K
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: RSHFT}
   - Z
