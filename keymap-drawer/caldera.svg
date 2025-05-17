@@ -501,11 +501,11 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(252, 151)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">(</text>
+<text x="0" y="0" class="key tap">[</text>
 </g>
 <g transform="translate(308, 162)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">)</text>
+<text x="0" y="0" class="key tap">]</text>
 </g>
 <g transform="translate(532, 162)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -517,7 +517,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(644, 140)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">UARW</text>
+<text x="0" y="0" class="key tap">UP</text>
 </g>
 <g transform="translate(700, 151)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -568,15 +568,15 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(588, 207)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LARW</text>
+<text x="0" y="0" class="key tap">LEFT</text>
 </g>
 <g transform="translate(644, 196)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">DARW</text>
+<text x="0" y="0" class="key tap">DOWN</text>
 </g>
 <g transform="translate(700, 207)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">RARW</text>
+<text x="0" y="0" class="key tap">RIGHT</text>
 </g>
 <g transform="translate(756, 218)" class="key trans keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>

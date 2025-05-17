@@ -89,11 +89,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - (
-  - )
+  - '['
+  - ']'
   - MUTE
   - {t: ▽, type: trans}
-  - UARW
+  - UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
@@ -104,9 +104,9 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - VOLUME DN
-  - LARW
-  - DARW
-  - RARW
+  - LEFT
+  - DOWN
+  - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
