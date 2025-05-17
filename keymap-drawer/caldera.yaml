@@ -61,7 +61,7 @@ layers:
   - )
   - ''''
   Low:
-  - BTCLR
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
