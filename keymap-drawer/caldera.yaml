@@ -61,7 +61,6 @@ layers:
   - ']'
   - ''''
   Low:
-  - BT CLR
   - F1
   - F2
   - F3
@@ -73,6 +72,7 @@ layers:
   - F9
   - F10
   - F11
+  - F12
   - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -97,7 +97,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
