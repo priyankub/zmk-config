@@ -53,7 +53,7 @@ layers:
   - LGUI
   - LALT
   - SPACE
-  - SPACE
+  - RGUI
   - {t: SPACE, h: Low}
   - SPACE
   - BSPC
