@@ -51,12 +51,12 @@ layers:
   - .
   - /
   - \
-  - {t: DEL, h: Low}
+  - {t: DEL, h: Raise}
   - LALT
   - LCTRL
   - SPACE
   - LGUI
-  - {t: BSPC, h: Raise}
+  - {t: BSPC, h: Low}
   - SPACE
   - '['
   - ']'
@@ -112,12 +112,12 @@ layers:
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - RET
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -173,12 +173,12 @@ layers:
   - RGB BRD
   - RGB SPI
   - RGB SPD
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - RGB HUI
   - RGB HUD
   - RGB SAI
