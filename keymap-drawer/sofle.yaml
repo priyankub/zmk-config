@@ -54,7 +54,7 @@ layers:
   - {t: DEL, h: Low}
   - LALT
   - LCTRL
-  - {t: SPACE, h: Low}
+  - SPACE
   - LGUI
   - {t: BSPC, h: Raise}
   - SPACE
