@@ -119,8 +119,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: RGB SPI, type: held}
+  - RGB SPI
+  - {type: held}
   - RGB SPD
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
