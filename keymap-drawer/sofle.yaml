@@ -159,7 +159,7 @@ layers:
   - RGB COLOR HSB(128,100,100)
   - RGB COLOR HSB(193,100,100)
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&soft_off'
   - UNDO
   - CUT
   - COPY
