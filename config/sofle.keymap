@@ -80,11 +80,11 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |        | ExtPw |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | ALT  | CTRL | LOWER|  ENTER |        | SPACE | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
-&kp GRAVE &kp N1 &kp N2    &kp N3   &kp N4    &kp N5                                        &kp N6      &kp N7    &kp N8    &kp N9   &kp N0   &kp MINUS
-&kp TAB   &kp Q  &kp W     &kp E    &kp R     &kp T                                         &kp Y       &kp U     &kp I     &kp O    &kp P    &kp EQUAL
-&kp LSHFT &kp A  &kp S     &kp D    &kp F     &kp G                                         &kp H       &kp J     &kp K     &kp L    &kp SEMI &kp RSHIFT
-&kp ESC   &kp Z  &kp X     &kp C    &kp V     &kp B       &kp C_MUTE     &ext_power EP_TOG  &kp N       &kp M     &kp COMMA &kp DOT  &kp FSLH &kp BSLH
-                 &lt 2 DEL &kp LALT &kp LCTRL &kp SPACE   &kp LGUI       &lt 1 BSPC         &kp SPACE   &kp LBKT  &kp RBKT  &kp APOS
+&kp GRAVE &kp N1 &kp N2    &kp N3    &kp N4   &kp N5                                        &kp N6      &kp N7    &kp N8    &kp N9   &kp N0   &kp MINUS
+&kp TAB   &kp Q  &kp W     &kp E     &kp R    &kp T                                         &kp Y       &kp U     &kp I     &kp O    &kp P    &kp EQUAL
+&kp LSHFT &kp A  &kp S     &kp D     &kp F    &kp G                                         &kp H       &kp J     &kp K     &kp L    &kp SEMI &kp APOS
+&kp ESC   &kp Z  &kp X     &kp C     &kp V    &kp B       &kp C_MUTE     &ext_power EP_TOG  &kp N       &kp M     &kp COMMA &kp DOT  &kp FSLH &kp K_CMENU
+                 &lt 2 DEL &kp LCTRL &kp LALT &kp SPACE   &kp LGUI       &lt 1 BSPC         &kp SPACE   &kp LBKT  &kp RBKT  &kp BSLH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -122,7 +122,7 @@
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                              &trans           &trans                           &trans                              &trans                             &trans                             &trans
 &trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                                    &rgb_ug RGB_EFF  &trans                           &trans                              &trans                             &trans                             &trans
 &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                                  &rgb_ug RGB_EFR  &rgb_ug RGB_COLOR_HSB(360,0,100) &rgb_ug RGB_COLOR_HSB(360,100,100)  &rgb_ug RGB_COLOR_HSB(128,100,100) &rgb_ug RGB_COLOR_HSB(193,100,100) &trans
-&soft_off     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans        &trans     &rgb_ug RGB_TOG  &rgb_ug RGB_ON   &rgb_ug RGB_OFF                  &rgb_ug RGB_BRI                     &rgb_ug RGB_BRD                    &rgb_ug RGB_SPI                    &rgb_ug RGB_SPD
+&soft_off  &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans        &trans     &rgb_ug RGB_TOG  &rgb_ug RGB_ON   &rgb_ug RGB_OFF                  &rgb_ug RGB_BRI                     &rgb_ug RGB_BRD                    &rgb_ug RGB_SPI                    &rgb_ug RGB_SPD
                         &trans       &trans       &trans       &trans        &trans     &trans           &rgb_ug RGB_HUI  &rgb_ug RGB_HUD                  &rgb_ug RGB_SAI                     &rgb_ug RGB_SAD  
             >;
 
