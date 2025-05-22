@@ -36,7 +36,7 @@ layers:
   - K
   - L
   - ;
-  - RSHIFT
+  - ''''
   - ESC
   - Z
   - X
@@ -50,17 +50,17 @@ layers:
   - ','
   - .
   - /
-  - \
+  - CMENU
   - {t: DEL, h: Raise}
-  - LALT
   - LCTRL
+  - LALT
   - SPACE
   - LGUI
   - {t: BSPC, h: Low}
   - SPACE
   - '['
   - ']'
-  - ''''
+  - \
   Low:
   - F1
   - F2
