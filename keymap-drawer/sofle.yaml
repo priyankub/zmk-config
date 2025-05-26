@@ -44,7 +44,7 @@ layers:
   - V
   - B
   - MUTE
-  - EP TOG
+  - RGB TOG
   - N
   - M
   - ','
@@ -105,7 +105,7 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - EP TOG
   - VOLUME DOWN
   - LEFT
   - DOWN
