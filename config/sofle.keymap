@@ -133,7 +133,7 @@
                         &trans       &trans       &trans       &trans        &trans     &trans           &rgb_ug RGB_HUI  &rgb_ug RGB_HUD                  &rgb_ug RGB_SAI                     &rgb_ug RGB_SAD  
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN BINDING &rgb_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &rgb_encoder>;
         };
     };
 };
