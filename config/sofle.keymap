@@ -75,7 +75,7 @@
 };
 
 &soft_off {
-    hold-time-ms = <1000>; // Only turn off it the key is held for 1 seconds or longer.
+    hold-time-ms = <400>; // Only turn off it the key is held for 0.4 seconds or longer.
     // To help potentially solve for issues where peripheral sometimes do not soft off
 };
 
