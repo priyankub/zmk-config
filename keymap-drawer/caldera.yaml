@@ -35,7 +35,7 @@ layers:
   - K
   - L
   - ;
-  - RSHFT
+  - ''''
   - CAPS
   - Z
   - X
@@ -48,18 +48,18 @@ layers:
   - .
   - /
   - \
-  - LCTRL
+  - ESC
   - DEL
-  - LGUI
+  - LCTRL
   - LALT
   - SPACE
   - RGUI
-  - {t: SPACE, h: Low}
+  - {t: BSPC, h: Low}
   - SPACE
-  - BSPC
   - '['
   - ']'
-  - ''''
+  - PG UP
+  - PG DN
   Low:
   - F1
   - F2
