@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  Default:
+  Base:
   - '`'
   - Q
   - W
@@ -12,20 +12,20 @@ layers:
   - I
   - O
   - P
-  - '['
-  - ']'
+  - '-'
+  - LSHFT
   - {t: A, h: LSHFT}
   - {t: S, h: LALT}
-  - {t: D, h: LGUI}
-  - {t: F, h: LCTRL}
+  - D
+  - F
   - G
   - H
-  - {t: J, h: RCTRL}
-  - {t: K, h: RGUI}
+  - J
+  - K
   - {t: L, h: RALT}
-  - {t: ;, h: RSHFT}
-  - ''''
-  - Meh+ LGUI
+  - ;
+  - {t: '''', h: RSHFT}
+  - ESC
   - Z
   - X
   - C
@@ -37,14 +37,56 @@ layers:
   - .
   - /
   - \
-  - {t: ESCAPE, h: Raise}
-  - {t: SPACE, h: Raise}
-  - ''
-  - ''
-  - {t: SPACE, h: Lower}
-  - {t: BACKSPACE, h: Lower}
-  Lower:
+  - LCTRL
+  - {t: SPACE, h: Sym}
+  - LGUI
+  - {t: BACKSPACE, h: Nav}
+  - SPACE
+  - TAB
+  Sym:
   - _
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESC
+  - {type: held}
+  - TAB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Nav:
   - F1
   - F2
   - F3
@@ -56,119 +98,77 @@ layers:
   - F9
   - F10
   - F11
-  - {t: +, h: LCTRL}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '-', h: RCTRL}
-  - {t: '=', h: LALT}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
-  - Adjust
   - {t: ▽, type: trans}
-  - {t: TAB, type: held}
   - {t: ▽, type: trans}
-  Raise:
-  - KP NUM
-  - KP SLASH
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP MINUS
-  - VOL UP
-  - HOME
-  - PSCRN
-  - PG UP
-  - SLCK
-  - CAPS
-  - '='
-  - {t: KP MULTIPLY, h: LSHFT}
-  - {t: KP 4, h: LALT}
-  - {t: KP 5, h: LGUI}
-  - {t: KP 6, h: LCTRL}
-  - KP PLUS
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - INS
-  - {t: APP, h: RCTRL}
   - {t: ▽, type: trans}
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP DOT
-  - VOL DN
-  - END
-  - ''
-  - PG DN
-  - PAUSE BREAK
   - {t: ▽, type: trans}
-  - {type: held}
-  - ENTER
   - {t: ▽, type: trans}
-  - Adjust
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESC
+  - {t: ▽, type: trans}
   - TAB
+  - {type: held}
+  - ENTER
   - {t: ▽, type: trans}
-  Adjust:
-  - '&bootloader'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&bootloader'
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: BT, h: '4'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '0'}
+  Tune:
   - BT CLR
   - ''
   - ''
   - ''
   - ''
   - ''
+  - VOLUME UP
+  - PP
+  - PREV
+  - NEXT
+  - ''
+  - ''
+  - '&bootloader'
   - ''
   - ''
   - ''
   - ''
   - ''
+  - MUTE
   - ''
+  - ''
+  - ''
+  - ''
+  - '&bootloader'
+  - '&soft_off'
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - VOL DN
+  - RGB TOG
+  - RGB BRD
+  - RGB BRI
+  - RGB COLOR HSB(360,0,100)
   - ''
   - {t: ▽, type: trans}
-  - ''
   - {type: held}
   - {t: ▽, type: trans}
   - {type: held}
+  - ''
   - {t: ▽, type: trans}
