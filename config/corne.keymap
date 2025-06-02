@@ -66,6 +66,11 @@
 
 /* END temporary RGB support section */
 
+&soft_off {
+    hold-time-ms = <400>; // Only turn off it the key is held for 0.4 seconds or longer.
+    // To help potentially solve for issues where peripheral sometimes do not soft off
+};
+
 // https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods
 // https://github.com/urob/zmk-helpers/blob/main/include/zmk-helpers/key-labels/42.h
 
@@ -110,44 +115,53 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            label = "Default";
+        Base {
+            label = "Base";
             bindings = <
-&kp GRAVE             &kp Q         &kp W        &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I            &kp O        &kp P            &kp LBKT
-&kp RBKT              &hml LSHFT A  &hml LALT S  &hml LGUI D   &hml LCTRL F  &kp G    &kp H  &hmr RCTRL J  &hmr RGUI K      &hmr RALT L  &hmr RSHFT SEMI  &kp SQT
-&kp LS(LA(LC(LGUI)))  &kp Z         &kp X        &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA        &kp DOT      &kp FSLH         &kp BSLH
-                                                 &lt 2 ESCAPE  &lt 2 SPACE   &none    &none  &lt 1 SPACE   &lt 1 BACKSPACE
+&kp GRAVE   &kp Q         &kp W        &kp E       &kp R       &kp T           &kp Y           &kp U     &kp I     &kp O        &kp P     &kp MINUS
+&kp LSHFT   &hml LSHFT A  &hml LALT S  &kp D       &kp F       &kp G           &kp H           &kp J     &kp K     &hmr RALT L  &kp SEMI  &hmr RSHFT APOS
+&kp ESC     &kp Z         &kp X        &kp C       &kp V       &kp B           &kp N           &kp M     &kp COMMA &kp DOT      &kp SLASH &kp BSLH
+                                       &kp LCTRL   &lt 1 SPACE &kp LGUI        &lt 2 BACKSPACE &kp SPACE &kp TAB
             >;
         };
 
-        layer_lower {
-            label = "Lower";
+        Sym {
+            label = "Sym";
             bindings = <
-&kp UNDER       &kp F1    &kp F2  &kp F3    &kp F4     &kp F5       &kp F6     &kp F7    &kp F8    &kp F9    &kp F10   &kp F11
-&mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-&mt LALT EQUAL  &kp N1    &kp N2  &kp N3    &kp N4     &kp N5       &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &trans
-                                  &trans    &kp ENTER  &mo 3        &trans     &kp TAB   &trans
+&kp UNDER &kp N1 &kp N2 &kp N3  &kp N4 &kp N5    &kp N6 &kp N7 &kp N8 &kp N9    &kp N0   &kp EQUAL
+&trans    &trans &trans &trans  &trans &trans    &trans &trans &trans  &kp LBKT &kp RBKT &kp MINUS
+&trans    &trans &trans &trans  &trans &trans    &trans &trans &trans  &trans   &trans   &trans
+                        &kp ESC &trans &kp TAB   &trans &trans &trans
             >;
         };
 
-        layer_raise {
-            label = "Raise";
+        Nav {
+            label = "Nav";
             bindings = <
-&kp KP_NUM  &kp KP_SLASH            &kp KP_N7        &kp KP_N8        &kp KP_N9         &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS
-&kp EQUAL   &hml LSHFT KP_MULTIPLY  &hml LALT KP_N4  &hml LGUI KP_N5  &hml LCTRL KP_N6  &kp KP_PLUS     &kp LEFT      &kp DOWN  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-&trans      &kp KP_N0               &kp KP_N1        &kp KP_N2        &kp KP_N3         &kp KP_DOT      &kp C_VOL_DN  &kp END   &none      &kp PG_DN  &kp PAUSE_BREAK  &trans
-                                                     &trans           &kp ENTER         &trans          &mo 3         &kp TAB   &trans
+&kp F1 &kp F2 &kp F3 &kp F4  &kp F5 &kp F6     &kp F7 &kp F8         &kp F9         &kp F10         &kp F11 &kp F12
+&trans &trans &trans &trans  &trans &trans     &trans &trans         &kp UP_ARROW   &trans          &trans  &trans
+&trans &trans &trans &trans  &trans &trans     &trans &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &trans  &trans
+                     &kp ESC &trans &kp TAB    &trans &kp ENTER      &trans
             >;
         };
 
-        layer_adjust {
-            label = "Adjust";
+        Tune {
+            label = "Tune";
             bindings = <
-&bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&none        &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
-                                         &trans        &none         &trans          &trans        &none         &trans
+&bt BT_CLR  &none         &none         &none         &none         &none            &kp C_VOLUME_UP &kp C_PP        &kp C_PREV      &kp C_NEXT      &none                            &none
+&bootloader &none         &none         &none         &none         &none            &kp C_MUTE      &none           &none           &none           &none                            &bootloader
+&soft_off   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &kp C_VOL_DN &rgb_ug RGB_TOG &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_COLOR_HSB(360,0,100) &none
+                                        &trans        &none         &trans           &trans          &none           &trans
             >;
+        };
+    };
+
+        conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        raise_lower {
+            if-layers = <2 1>;
+            then-layer = <3>;
         };
     };
 };
