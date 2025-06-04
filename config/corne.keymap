@@ -79,7 +79,7 @@
 #define THUMBS 36 37 38 39 40 41                                  // Thumb keys.
 #define TTERM_MS 280
 #define QTAP_MS 175
-#define RPIM_MS 150
+#define RPIM_MS 135
 
 / {
     behaviors {
