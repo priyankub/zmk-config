@@ -33,9 +33,9 @@ layers:
   - LCTRL
   - {t: SPACE, h: Sym}
   - LGUI
-  - {t: TAB, h: Nav}
+  - {t: BACKSPACE, h: Nav}
   - SPACE
-  - BACKSPACE
+  - TAB
   Sym:
   - '1'
   - '2'
