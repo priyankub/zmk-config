@@ -34,9 +34,9 @@ layers:
   - LCTRL
   - {t: SPACE, h: Sym}
   - LGUI
-  - {t: TAB, h: Nav}
+  - {t: BACKSPACE, h: Nav}
   - SPACE
-  - BACKSPACE
+  - TAB
   Sym:
   - '1'
   - '2'
@@ -115,12 +115,12 @@ layers:
   - BT CLR
   - ''
   - ''
-  - EP ON
-  - EP OFF
+  - ''
+  - '&soft_off'
   - VOLUME UP
-  - '&snip'
-  - ''
-  - ''
+  - PP
+  - PREV
+  - NEXT
   - ''
   - '&bootloader'
   - ''
@@ -128,9 +128,9 @@ layers:
   - ''
   - ''
   - MUTE
-  - PREV
-  - PP
-  - NEXT
+  - ''
+  - ''
+  - ''
   - '&bootloader'
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
