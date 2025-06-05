@@ -114,8 +114,8 @@ layers:
   - BT CLR
   - ''
   - ''
-  - EP ON
-  - EP OFF
+  - ''
+  - '&soft_off'
   - VOLUME UP
   - '&snip'
   - ''
