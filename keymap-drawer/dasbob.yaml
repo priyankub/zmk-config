@@ -117,9 +117,9 @@ layers:
   - ''
   - '&soft_off'
   - VOLUME UP
-  - '&snip'
-  - ''
-  - ''
+  - PP
+  - PREV
+  - NEXT
   - ''
   - '&bootloader'
   - ''
@@ -127,9 +127,9 @@ layers:
   - ''
   - ''
   - MUTE
-  - PREV
-  - PP
-  - NEXT
+  - ''
+  - ''
+  - ''
   - '&bootloader'
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
