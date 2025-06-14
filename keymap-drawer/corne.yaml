@@ -149,10 +149,10 @@ layers:
   - ''
   - ''
   - MUTE
-  - ''
-  - ''
-  - ''
-  - ''
+  - RGB COLOR HSB(360,0,100)
+  - RGB COLOR HSB(360,100,100)
+  - RGB COLOR HSB(128,100,100)
+  - RGB COLOR HSB(193,100,100)
   - '&bootloader'
   - '&soft_off'
   - {t: BT, h: '0'}
@@ -164,11 +164,11 @@ layers:
   - RGB TOG
   - RGB BRD
   - RGB BRI
-  - RGB COLOR HSB(360,0,100)
+  - ''
   - ''
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - {t: ▽, type: trans}
+  - RGB EFF
+  - RGB EFR
