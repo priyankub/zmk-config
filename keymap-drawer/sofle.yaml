@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - ESC
+  - LCTRL
   - Z
   - X
   - C
@@ -52,7 +52,7 @@ layers:
   - /
   - CMENU
   - {t: DEL, h: Raise}
-  - LCTRL
+  - ESC
   - LALT
   - SPACE
   - LGUI
